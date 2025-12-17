@@ -26,4 +26,16 @@
 الآن أصبح لديك مشروع أكثر تعقيداً وقوة. قم بتجربة هذه الأكواد الجديدة بنفس الطريقة السابقة.
 
 ما رأيك في هذه
- 
+ /* --- أضف هذا الكود في نهاية ملف style.css --- */
+
+/* Style for overdue tasks */
+#task-list li.overdue .due-date {
+    color: #dc3545; /* Red color for overdue date */
+    font-weight: bold;
+}
+
+#task-list li.overdue .due-date::before {
+    content: '⚠️ '; /* Warning icon */
+    display: inline-block;
+    margin-left: 5px;
+}
